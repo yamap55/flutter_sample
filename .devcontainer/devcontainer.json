@@ -1,0 +1,18 @@
+{
+  "name": "flutter_sample",
+  "dockerComposeFile": ["../docker-compose.yml"],
+  "service": "flutter_sample",
+  "workspaceFolder": "/home/developer/project",
+  "shutdownAction": "stopCompose",
+  "remoteUser": "developer",
+  "settings": {
+    "files.eol": "\n",
+    "terminal.integrated.profiles.linux": {
+      "bash": {
+        "path": "/bin/bash"
+      }
+    },
+    "editor.formatOnSave": true
+  },
+  "extensions": ["dart-code.dart-code", "dart-code.flutter"]
+}
