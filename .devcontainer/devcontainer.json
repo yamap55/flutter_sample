@@ -5,6 +5,7 @@
   "workspaceFolder": "/home/developer/project",
   "shutdownAction": "stopCompose",
   "remoteUser": "developer",
+  "overrideCommand": true,
   "settings": {
     "files.eol": "\n",
     "terminal.integrated.profiles.linux": {
