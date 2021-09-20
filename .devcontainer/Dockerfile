@@ -1,6 +1,6 @@
 # https://hub.docker.com/r/matspfeiffer/flutter
 # https://github.com/matsp/docker-flutter
-FROM matspfeiffer/flutter:latest
+FROM matspfeiffer/flutter:2.2.1
 # overwrite flutter process
 ENTRYPOINT [ "" ]
 
@@ -21,6 +21,10 @@ RUN rm -rf /var/lib/apt/lists/* \
     && apt-get autoremove -y \
     && apt-get clean -y \
     && rm -rf /var/lib/apt/lists/*
+
+# install hadolint
+RUN wget --progress=dot:giga https://github.com/hadolint/hadolint/releases/download/v2.7.0/hadolint-Linux-x86_64 -O /usr/local/bin/hadolint \
+    && chmod +x /usr/local/bin/hadolint
 
 # terminal setting
 RUN wget --progress=dot:giga https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash -O /home/developer/.git-completion.bash \
