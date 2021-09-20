@@ -13,3 +13,5 @@ services:
     container_name: flutter_sample-container
     tty: true
     # env_file: .env # shellスクリプト内でも環境変数として使用するため
+    ports:
+      - "8080:8080"
