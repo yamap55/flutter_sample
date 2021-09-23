@@ -38,6 +38,9 @@ devcontainer の設定をしていますので、VS Code と Docker、Git さえ
 3. `flutter run -d web-server --web-port=8080 --web-hostname=0.0.0.0`
 
 ### flutter tutorial
+
+https://flutter.dev/docs/get-started/codelab
+
 1. `flutter create flutter_tutorial`
 2. `cd flutter_tutorial`
 3. `flutter run -d web-server --web-port=8080 --web-hostname=0.0.0.0`
