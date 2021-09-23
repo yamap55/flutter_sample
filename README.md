@@ -31,6 +31,6 @@ devcontainer の設定をしていますので、VS Code と Docker、Git さえ
 4. しばらく待つ
    - 初回の場合コンテナー image の取得や作成が行われる
 5. 起動
-6. `flutter create hoge`
-7. `cd hoge`
+6. `flutter create default_app`
+7. `cd default_app`
 8. `flutter run -d web-server --web-port=8080 --web-hostname=0.0.0.0`
