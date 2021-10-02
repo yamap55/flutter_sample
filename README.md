@@ -45,3 +45,7 @@ https://flutter.dev/docs/get-started/codelab
 2. `cd flutter_tutorial`
 3. `flutter run -d web-server --web-port=8080 --web-hostname=0.0.0.0`
 
+## build & deploy memo
+1. `cd flutter_tutorial`
+2. `flutter build web`
+3. `docker run -d -p 8081:80 -v  "/Users/yamap_55/github/flutter_sample/flutter_tutorial/build/web/:/usr/local/apache2/htdocs/" httpd`
