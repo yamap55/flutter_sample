@@ -1,4 +1,4 @@
-name: hadolint
+name: build
 
 on: [push]
 
