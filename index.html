@@ -30,24 +30,19 @@
   <!-- This script installs service_worker.js to provide PWA functionality to
        application. For more information, see:
        https://developers.google.com/web/fundamentals/primers/service-workers -->
-    <script>
-    var serviceWorkerVersion = '1250454933';
+  <script>
+    var serviceWorkerVersion = '2927145689';
     var scriptLoaded = false;
-    var loc = location.pathname;
-    var folder = loc.substring(0, loc.lastIndexOf('/')) + '/';
     function loadMainDartJs() {
       if (scriptLoaded) {
         return;
       }
       scriptLoaded = true;
       var scriptTag = document.createElement('script');
-      scriptTag.src = folder + 'main.dart.js';
+      scriptTag.src = 'main.dart.js';
       scriptTag.type = 'application/javascript';
       document.body.append(scriptTag);
     }
-    loadMainDartJs()
-    </script>
-    <!--
 
     if ('serviceWorker' in navigator) {
       // Service workers are supported. Use them.
@@ -55,7 +50,7 @@
         // Wait for registration to finish before dropping the <script> tag.
         // Otherwise, the browser will load the script multiple times,
         // potentially different versions.
-        var serviceWorkerUrl = folder + 'flutter_service_worker.js?v=' + serviceWorkerVersion;
+        var serviceWorkerUrl = 'flutter_service_worker.js?v=' + serviceWorkerVersion;
         navigator.serviceWorker.register(serviceWorkerUrl)
           .then((reg) => {
             function waitForActivation(serviceWorker) {
@@ -99,7 +94,5 @@
       loadMainDartJs();
     }
   </script>
--->
-  <!-- <script src="./main.dart.js" type="application/javascript"></script> -->
 </body>
 </html>
