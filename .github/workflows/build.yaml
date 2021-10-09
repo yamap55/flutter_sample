@@ -25,6 +25,9 @@ jobs:
         with:
           name: build files
           path: ./flutter_tutorial/build/web/
+      - name: replace path
+        run: sed -i 's+"/"+""+g' flutter_service_worker.js
+        working-directory: ./flutter_tutorial/build/web
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
