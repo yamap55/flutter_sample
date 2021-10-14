@@ -55,3 +55,8 @@ https://flutter.dev/docs/get-started/codelab
 2. `flutter pub get`
 3. `flutter build web`
 4. `docker run -d -p 8081:80 -v  "/Users/yamap_55/github/flutter_sample/flutter_tutorial/build/web/:/usr/local/apache2/htdocs/" httpd`
+
+## run
+
+1. `docker run --rm -it -d -p 8081:80 ghcr.io/yamap55/flutter_sample:latest`
+2. Display "http://localhost:8081" in your browser.
