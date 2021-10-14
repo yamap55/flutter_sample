@@ -9,6 +9,8 @@ devcontainer の設定をしていますので、VS Code と Docker、Git さえ
 - lint
   - [hadolint](https://github.com/hadolint/hadolint)
 - [GitHub Actions](https://github.co.jp/features/actions)
+- Deploy GitHub Pages
+  -  https://yamap55.github.io/flutter_sample/
 
 ## 環境詳細
 
@@ -33,6 +35,7 @@ devcontainer の設定をしていますので、VS Code と Docker、Git さえ
 5. 起動
 
 ### default app
+
 1. `flutter create default_app`
 2. `cd default_app`
 3. `flutter run -d web-server --web-port=8080 --web-hostname=0.0.0.0`
@@ -47,6 +50,7 @@ https://flutter.dev/docs/get-started/codelab
 4. `flutter run -d web-server --web-port=8080 --web-hostname=0.0.0.0`
 
 ## build & deploy memo
+
 1. `cd flutter_tutorial`
 2. `flutter pub get`
 3. `flutter build web`
