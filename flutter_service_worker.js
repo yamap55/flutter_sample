@@ -14,14 +14,14 @@ const RESOURCES = {
 "icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
 "main.dart.js": "32b50379d98c48beb86e406eaee37633",
 "manifest.json": "ff7ce09bbeaa6e5fda1a0e5fc9891968",
-"index.html": "bfbeaf6ad28ca8ed37b75035813bfbea",
-"": "bfbeaf6ad28ca8ed37b75035813bfbea"
+"index.html": "ced9cd12d47409d574daf7223ce405bf",
+"/": "ced9cd12d47409d574daf7223ce405bf"
 };
 
 // The application shell files that are downloaded before a service worker can
 // start.
 const CORE = [
-  "",
+  "/",
 "main.dart.js",
 "index.html",
 "assets/NOTICES",
@@ -66,7 +66,7 @@ self.addEventListener("activate", function(event) {
       for (var request of await contentCache.keys()) {
         var key = request.url.substring(origin.length + 1);
         if (key == "") {
-          key = "";
+          key = "/";
         }
         // If a resource from the old manifest is not in the new cache, or if
         // the MD5 sum has changed, delete it. Otherwise the resource is left
@@ -155,7 +155,7 @@ async function downloadOffline() {
   for (var request of await contentCache.keys()) {
     var key = request.url.substring(origin.length + 1);
     if (key == "") {
-      key = "";
+      key = "/";
     }
     currentContent[key] = true;
   }
