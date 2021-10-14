@@ -10,7 +10,9 @@ devcontainer の設定をしていますので、VS Code と Docker、Git さえ
   - [hadolint](https://github.com/hadolint/hadolint)
 - [GitHub Actions](https://github.co.jp/features/actions)
 - Deploy GitHub Pages
-  -  https://yamap55.github.io/flutter_sample/
+  - https://yamap55.github.io/flutter_sample/
+- Publish GitHub Packages
+  - https://github.com/yamap55/flutter_sample/pkgs/container/flutter_sample
 
 ## 環境詳細
 
