@@ -30,45 +30,24 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  int _counter = 0;
-
-  void _incrementCounter() {
-    setState(() {
-      _counter++;
-    });
-  }
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: Text(widget.title),
       ),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            const Text(
-              'You have pushed the button this many times:',
-            ),
-            Text(
-              '$_counter',
-              style: Theme.of(context).textTheme.headline4,
-            ),
-          ],
-        ),
-      ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: _incrementCounter,
-        tooltip: 'Increment',
-        child: const Icon(Icons.add),
+      body: ListView(
+        children: const [
+          ListTile(leading: Icon(Icons.vpn_key), title: Text('data1')),
+          ListTile(leading: Icon(Icons.vpn_key), title: Text('data2')),
+          ListTile(leading: Icon(Icons.vpn_key), title: Text('data3')),
+        ],
       ),
       bottomNavigationBar: const Footer(),
     );
   }
 }
 
-// TODO: リストを表示
 // TODO: リストの間に区切り線を表示
 // TODO: リストの表示を動的に
 // TODO: フロートアクションボタンをタップ時に、リストを1つ追加表示
