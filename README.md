@@ -16,8 +16,8 @@ devcontainer の設定をしていますので、VS Code と Docker、Git さえ
 
 ## 環境詳細
 
-- Dart : 2.13.1
-- Flutter : 2.2.1
+- Dart : 2.16.0
+- Flutter : 2.10.0
 
 ### 事前準備
 
