@@ -11,11 +11,11 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Password Post',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      home: const MyHomePage(title: 'パスワードポスト'),
     );
   }
 }
@@ -68,7 +68,6 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 }
 
-// TODO: ホーム画面のタイトルを追加
 // TODO: リストを表示
 // TODO: リストの間に区切り線を表示
 // TODO: リストの表示を動的に
