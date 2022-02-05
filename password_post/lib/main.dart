@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:password_post/footer.dart';
 
 void main() {
   runApp(const MyApp());
@@ -62,18 +63,7 @@ class _MyHomePageState extends State<MyHomePage> {
         tooltip: 'Increment',
         child: const Icon(Icons.add),
       ),
-      bottomNavigationBar: BottomNavigationBar(
-        items: const [
-          BottomNavigationBarItem(
-            icon: Icon(Icons.home),
-            label: 'Home',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.list),
-            label: 'List',
-          ),
-        ],
-      ),
+      bottomNavigationBar: const Footer(),
     );
   }
 }
