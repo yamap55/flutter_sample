@@ -2,9 +2,9 @@
   "name": "flutter_sample",
   "dockerComposeFile": ["../docker-compose.yml"],
   "service": "flutter_sample",
-  "workspaceFolder": "/home/developer/project",
+  "workspaceFolder": "/home/vscode/project",
   "shutdownAction": "stopCompose",
-  "remoteUser": "developer",
+  "remoteUser": "vscode",
   "overrideCommand": true,
   "settings": {
     "files.eol": "\n",

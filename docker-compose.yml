@@ -5,10 +5,10 @@ services:
       context: .
       dockerfile: .devcontainer/Dockerfile
       args:
-        WORKDIR: /home/developer/project
+        WORKDIR: /home/vscode/project
     volumes:
-      - .:/home/developer/project
-      - ${USERPROFILE-~}/.ssh:/home/developer/.ssh
+      - .:/home/vscode/project
+      - ${USERPROFILE-~}/.ssh:/home/vscode/.ssh
     image: flutter_sample-image
     container_name: flutter_sample-container
     tty: true
