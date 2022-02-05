@@ -51,6 +51,13 @@ https://flutter.dev/docs/get-started/codelab
 3. `flutter pub get`
 4. `flutter run -d web-server --web-port=8080 --web-hostname=0.0.0.0`
 
+### flutter sample
+
+1. `flutter create password_post`
+2. `cd password_post`
+3. `flutter pub get`
+4. `flutter run -d web-server --web-port=8080 --web-hostname=0.0.0.0`
+
 ## build & deploy memo
 
 1. `cd flutter_tutorial`
