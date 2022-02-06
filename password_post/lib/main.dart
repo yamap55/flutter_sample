@@ -39,8 +39,11 @@ class _MyHomePageState extends State<MyHomePage> {
       body: ListView(
         children: const [
           ListTile(leading: Icon(Icons.vpn_key), title: Text('data1')),
+          Divider(thickness: 1.5),
           ListTile(leading: Icon(Icons.vpn_key), title: Text('data2')),
+          Divider(thickness: 1.5),
           ListTile(leading: Icon(Icons.vpn_key), title: Text('data3')),
+          Divider(thickness: 1.5),
         ],
       ),
       bottomNavigationBar: const Footer(),
