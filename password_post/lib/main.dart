@@ -37,18 +37,23 @@ class _MyHomePageState extends State<MyHomePage> {
         title: Text(widget.title),
       ),
       body: ListView(
-        children: const [
-          ListTile(leading: Icon(Icons.vpn_key), title: Text('data1')),
-          ListTile(leading: Icon(Icons.vpn_key), title: Text('data2')),
-          ListTile(leading: Icon(Icons.vpn_key), title: Text('data3')),
-        ],
-      ),
+          // NOTE: フォーマットを見直す
+          children: [
+        for (var i = 1; i <= 10; i++)
+          ((i) => [
+                ListTile(
+                  leading: const Icon(Icons.vpn_key),
+                  title: Text('data$i'),
+                ),
+                const Divider(thickness: 1.5),
+              ])(i)
+      ].fold<List<StatelessWidget>>(
+              [], (prev, element) => [...prev, ...element])),
       bottomNavigationBar: const Footer(),
     );
   }
 }
 
-// TODO: リストの間に区切り線を表示
 // TODO: リストの表示を動的に
 // TODO: フロートアクションボタンをタップ時に、リストを1つ追加表示
 // TODO: 新しい画面を追加し、リストをタップした時に遷移
