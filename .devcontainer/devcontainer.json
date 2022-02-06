@@ -15,5 +15,11 @@
     },
     "editor.formatOnSave": true
   },
-  "extensions": ["dart-code.dart-code", "dart-code.flutter", "eamodio.gitlens", "exiasr.hadolint"]
+  "extensions": [
+    "dart-code.dart-code",
+    "dart-code.flutter",
+    "eamodio.gitlens",
+    "exiasr.hadolint",
+    "wayou.vscode-todo-highlight"
+  ]
 }
