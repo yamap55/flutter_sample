@@ -57,7 +57,6 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 }
 
-// TODO: リストの間に区切り線を表示
 // TODO: リストの表示を動的に
 // TODO: フロートアクションボタンをタップ時に、リストを1つ追加表示
 // TODO: 新しい画面を追加し、リストをタップした時に遷移
