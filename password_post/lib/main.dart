@@ -36,18 +36,18 @@ class _MyHomePageState extends State<MyHomePage> {
       appBar: AppBar(
         title: Text(widget.title),
       ),
-      body: ListView(children: [
-        for (var i = 1; 1 <= 10; i++)
-          ((i) => Column(
-                children: [
-                  ListTile(
-                    leading: const Icon(Icons.vpn_key),
-                    title: Text('data$i'),
-                  ),
-                  const Divider(thickness: 1.5)
-                ],
-              ))(i)
-      ]),
+      body: ListView(
+          children: List.generate(
+              10,
+              (i) => Column(
+                    children: [
+                      ListTile(
+                        leading: const Icon(Icons.vpn_key),
+                        title: Text('data$i'),
+                      ),
+                      const Divider(thickness: 1.5)
+                    ],
+                  ))),
       bottomNavigationBar: const Footer(),
     );
   }
