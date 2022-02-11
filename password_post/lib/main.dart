@@ -37,18 +37,17 @@ class _MyHomePageState extends State<MyHomePage> {
         title: Text(widget.title),
       ),
       body: ListView(
-          // NOTE: フォーマットを見直す
-          children: [
-        for (var i = 1; i <= 10; i++)
-          ((i) => [
-                ListTile(
-                  leading: const Icon(Icons.vpn_key),
-                  title: Text('data$i'),
-                ),
-                const Divider(thickness: 1.5),
-              ])(i)
-      ].fold<List<StatelessWidget>>(
-              [], (prev, element) => [...prev, ...element])),
+          children: List.generate(
+              10,
+              (i) => Column(
+                    children: [
+                      ListTile(
+                        leading: const Icon(Icons.vpn_key),
+                        title: Text('data$i'),
+                      ),
+                      const Divider(thickness: 1.5)
+                    ],
+                  ))),
       bottomNavigationBar: const Footer(),
     );
   }
