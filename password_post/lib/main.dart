@@ -53,7 +53,6 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 }
 
-// TODO: リストの表示を動的に
 // TODO: フロートアクションボタンをタップ時に、リストを1つ追加表示
 // TODO: 新しい画面を追加し、リストをタップした時に遷移
 // TODO: 新しい画面のレイアウト作成
