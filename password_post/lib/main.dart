@@ -30,30 +30,29 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
+  List<String> titleList = List.generate(10, (i) => 'title_$i');
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: Text(widget.title),
       ),
-      body: ListView(
-          children: List.generate(
-              10,
-              (i) => Column(
-                    children: [
-                      ListTile(
-                        leading: const Icon(Icons.vpn_key),
-                        title: Text('data$i'),
-                      ),
-                      const Divider(thickness: 1.5)
-                    ],
-                  ))),
+      body: ListView.builder(
+          itemBuilder: ((context, index) => Column(
+                children: [
+                  ListTile(
+                    leading: const Icon(Icons.vpn_key),
+                    title: Text(titleList[index]),
+                  ),
+                  const Divider(thickness: 1.5)
+                ],
+              )),
+          itemCount: titleList.length),
       bottomNavigationBar: const Footer(),
     );
   }
 }
 
-// TODO: リストの表示を動的に
 // TODO: フロートアクションボタンをタップ時に、リストを1つ追加表示
 // TODO: 新しい画面を追加し、リストをタップした時に遷移
 // TODO: 新しい画面のレイアウト作成
