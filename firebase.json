@@ -1,0 +1,10 @@
+{
+  "hosting": {
+    "public": "flutter_tutorial/build/web",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
