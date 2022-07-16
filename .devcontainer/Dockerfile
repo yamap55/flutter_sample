@@ -21,7 +21,7 @@ RUN chsh -s /bin/bash
 # ENV ANDROID_ARCHITECTURE="x86_64"
 # ENV ANDROID_SDK_ROOT="/home/$USER/android"
 ENV FLUTTER_CHANNEL="stable"
-ENV FLUTTER_VERSION="2.10.0"
+ENV FLUTTER_VERSION="3.0.5"
 ENV FLUTTER_URL="https://storage.googleapis.com/flutter_infra_release/releases/$FLUTTER_CHANNEL/linux/flutter_linux_$FLUTTER_VERSION-$FLUTTER_CHANNEL.tar.xz"
 ENV FLUTTER_HOME="/home/$USERNAME/flutter"
 # ENV FLUTTER_WEB_PORT="8090"
